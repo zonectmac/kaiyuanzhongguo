@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.3.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://dl.bintray.com/oschinaapp/maven/'
+        }
+    }
+}
+
+ext {
+    compileSdkVersion = 23
+    buildToolsVersion = "24.0.3"
+    applicationId = "net.oschina.app"
+    minSdkVersion = 19
+    targetSdkVersion = 23
+    versionCode = 280
+    versionName = "v2.8.0(1701231104)"
+    supportVersion = '25.1.0'
+}
